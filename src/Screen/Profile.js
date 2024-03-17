@@ -1,5 +1,5 @@
-import { View, Text, TouchableOpacity, Alert } from 'react-native';
 import React from 'react';
+import { View, Text, TouchableOpacity, Alert } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
 
 export default function Profile() {
@@ -18,7 +18,8 @@ export default function Profile() {
         {
           text: 'OK',
           onPress: () => {
-            // Navigate to the Login page
+            // Perform logout logic
+            // For now, let's assume logout is successful and navigate to the Login screen
             navigation.navigate('LogIn');
           },
         },

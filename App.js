@@ -58,7 +58,7 @@ export default function App() {
           <Stack.Screen name="Main" component={MainStack} />
         ) : (
           <Stack.Screen name="LogIn" options={{ headerShown: false }}>
-            {() => <LogIn onLogin={handleLogin} />}
+            {({ navigation }) => <LogIn navigation={navigation} onLogin={handleLogin} />}
           </Stack.Screen>
         )}
       </Stack.Navigator>

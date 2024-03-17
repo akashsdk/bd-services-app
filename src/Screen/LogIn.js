@@ -1,18 +1,20 @@
 import React, { useState } from 'react';
 import { StyleSheet, View, Text, TextInput, TouchableHighlight } from 'react-native';
-import { useNavigation } from '@react-navigation/native';
 
-const LogIn = () => {
+const LogIn = ({ navigation, onLogin }) => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
-  const navigation = useNavigation();
 
   const handleLogin = () => {
     // Implement your login logic here
     console.log('Email:', email);
     console.log('Password:', password);
-    // Navigate to App.js page
-    navigation.navigate('App');
+
+    // Perform login authentication
+    // For now, just call the onLogin function passed from the parent component
+    onLogin();
+
+    // No navigation to the main screen here, it should be handled by the parent component
   };
 
   const handleSignIn = () => {
