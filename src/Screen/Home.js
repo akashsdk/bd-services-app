@@ -5,9 +5,7 @@ export default function Home() {
   return (
     <ScrollView>
       <View style={styles.container}>
-      <Text style={styles.text}>Hello, world! ok</Text>
-      
-      
+      <Text style={styles.text}>Hello, world! ok ok </Text>
     </View>
     </ScrollView>
   )
