@@ -13,7 +13,7 @@ export default function App() {
 
 const styles = StyleSheet.create({
   container: {
-    marginTop:100,
+    marginTop:160,
   },
   text: {
     fontSize: 20,
