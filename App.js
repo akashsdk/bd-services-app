@@ -1,13 +1,11 @@
 import { View, Text, StyleSheet, ScrollView } from 'react-native'
 import React from 'react'
 
+import Navigation from './Screen/Navigation';
+
 export default function App() {
   return (
-    <ScrollView>
-      <View style={styles.container}>
-      <Text style={styles.text}>Hello, world! ok ok </Text>
-    </View>
-    </ScrollView>
+    <Navigation/>
   )
 }
 
