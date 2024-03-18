@@ -1,16 +1,21 @@
-
-
-
 import React, { useState } from 'react';
 import { View, Text, TextInput, TouchableOpacity, StyleSheet } from 'react-native';
+import { useNavigation } from '@react-navigation/native';
 
 const LogIn = () => {
+  const navigation = useNavigation();
+
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
 
   const handleLogin = () => {
     // Here you can implement the login logic
-    console.log('Logging in with:', email, password);
+    // For demo purpose, navigate to main page directly
+    navigation.navigate('Home');
+  };
+
+  const handleSingIn = () => {
+    navigation.navigate('SignUp');
   };
 
   return (
@@ -40,7 +45,7 @@ const LogIn = () => {
         <Text style={styles.loginText}>LOGIN</Text>
       </TouchableOpacity>
 
-      <TouchableOpacity>
+      <TouchableOpacity onPress={handleSingIn}>
         <Text style={styles.signupText}>Signup</Text>
       </TouchableOpacity>
     </View>
@@ -62,16 +67,18 @@ const styles = StyleSheet.create({
   },
   inputView: {
     width: '80%',
-    border:1,
     borderRadius: 25,
     height: 50,
     marginBottom: 20,
     justifyContent: 'center',
     padding: 20,
+    borderWidth: 1,
+    borderColor: 'red',
   },
   inputText: {
     height: 50,
-    color: 'white',
+    color: 'black',
+    fontSize:22,
   },
   loginBtn: {
     width: '80%',
@@ -85,9 +92,12 @@ const styles = StyleSheet.create({
   },
   loginText: {
     color: 'white',
+    fontSize:22,
+    fontWeight:'bold',
   },
   signupText: {
     color: '#003f5c',
+    fontSize:22,
   },
 });
 

@@ -10,11 +10,5 @@ export default function App() {
 }
 
 const styles = StyleSheet.create({
-  container: {
-    marginTop:160,
-  },
-  text: {
-    fontSize: 20,
-    color: 'red',
-  },
+ 
 });
