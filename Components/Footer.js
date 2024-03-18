@@ -15,7 +15,7 @@ export default function Footer() {
   };
 
   const handleMenu = () => {
-    navigation.navigate("Menu");
+    navigation.navigate("Profile");
   };
 
   return (
@@ -61,6 +61,6 @@ const styles = StyleSheet.create({
   },
   footerText: {
     fontSize: 20,
-    color:'#fb5b5a',
+    color: "#fb5b5a",
   },
 });

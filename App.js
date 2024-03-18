@@ -1,14 +1,11 @@
-import { View, Text, StyleSheet, ScrollView } from 'react-native'
-import React from 'react'
-
+import React from 'react';
 import Navigation from './Screen/Navigation';
 
 export default function App() {
+  
+  const routeName = 'Home';
+  
   return (
-    <Navigation/>
-  )
+    <Navigation routeName={routeName} />
+  );
 }
-
-const styles = StyleSheet.create({
- 
-});
