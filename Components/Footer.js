@@ -15,7 +15,7 @@ export default function Footer() {
   };
 
   const handleMenu = () => {
-    navigation.navigate("Profile");
+    navigation.navigate("Menu");
   };
 
   return (
